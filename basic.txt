@@ -1,10 +1,40 @@
-clone->link files from git hub
-cd->change directory 
-ls->files under a folder
+clone <-link-> ->link files from git hub
+cd <-branch name-> ->change directory 
+cd .. ->to come out of a directory
+ls ->files under a folder
 ls -a ->shows all files wether it be hidden or not
 status->state of code
 // file types->untracked(during new file), modified(ater change in file befor add), staged(after add), unchanged(after commit)
-add->getting the file to be ready for commit by confirming the changes in terminal
-commit->change that needs to be tracked is commited
-push->for having the changes seen on git hub website
+add <-file/folder name-> ->getting the file to be ready for commit by confirming the changes in terminal 
+add . ->add all files directly
+commit -m "<-message->" ->change that needs to be tracked is commited
+push origin(name of repository) main(name of branch) ->for having the changes seen on git hub website
 //local->laptop, remote->website(git hub)
+//(repository is nothing but a file) && (directory is like a folder).
+pull origin main->for accepting the changes done on remote repo (github) to local repository.
+mkdir <-new directory name-> ->to make new directory or folder through local terminal.
+init <-name-> ->initialize directory to git through local terminal.
+{git remote(git hub) add origin(name) <-link->}->to push the new repository made in local system.
+remote -v->for checking the linkthat we are pushink our repository to
+branch->to check on which branch we are currently and also how many branch exists
+{git branch -M <-new name->}->for renaming the branch
+git checkout <-branch name-> -> for moving from one brach to another
+git checkout -b <-new branch name-> ->for creating a branch
+git -d <-branch name-> -> to delete a branch 
+git diff <-branch name-> ->to see difference between given branch and the one you are currently on
+git merge <-branch name-> -> to merge two branches(through local system) also used for resolving conflict
+(in remote system a pull request needs to be generated for merging two branches which checks for any error and all that)
+git log ->to check commits through local system
+q -> to quit from git log
+//fork is used to copy of already provided code 
+//undoing 
+{
+    git reset <-file name-> -> undo for those given file's changes which aren't commited but added
+    git reset -> undo for changes for all files before commiting
+
+    git rest HEAD~1 ->undo after having one commit(HEAD is name of the last commit)
+
+    git reset <-commit hash-> -> undo till specific commit(every commit has it's own commit hash)
+    
+    git reset --hard <-commit hash-> ->undo seen in vs code only if -- hard is added.
+}
