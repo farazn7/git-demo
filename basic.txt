@@ -4,3 +4,6 @@ ls->files under a folder
 ls -a ->shows all files wether it be hidden or not
 status->state of code
 // file types->untracked(during new file), modified(ater change in file befor add), staged(after add), unchanged(after commit)
+add->getting the file to be ready for commit by confirming the changes in terminal
+commit->change that needs to be tracked is commited
+push->for having the changes seen on git hub website
