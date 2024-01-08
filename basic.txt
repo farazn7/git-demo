@@ -1,0 +1,6 @@
+clone->link files from git hub
+cd->change directory 
+ls->files under a folder
+ls -a ->shows all files wether it be hidden or not
+status->state of code
+// file types->untracked(during new file), modified(ater change in file befor add), staged(after add), unchanged(after commit)
