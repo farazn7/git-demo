@@ -7,3 +7,4 @@ status->state of code
 add->getting the file to be ready for commit by confirming the changes in terminal
 commit->change that needs to be tracked is commited
 push->for having the changes seen on git hub website
+//local->laptop, remote->website(git hub)
